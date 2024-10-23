@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra-Papel-Tijera</title>
+    <link rel="stylesheet" href="../css/PPT.css">
+</head>
+
+<body>
+
+    <a href="../index.html">⬅️Volver a la pagina principal!</a>
+
+
+        <h1>Piedra - Papel - Tijera</h1>
+
+        <div class="opciones">
+            <button onclick="playGame('Piedra')">🤜</button>
+            <button onclick="playGame('Papel')">🖐️</button>
+            <button onclick="playGame('Tijera')">✌️</button>
+        </div>
+
+        <div id="PlayerDisplay">Player: </div>
+        <div id="CompuDisplay">Computadora: </div>
+        <div id="ResultadoDisplay"></div>
+
+        <div class="scoreDisplay">Player Score:
+            <span id="playerscoredisplay">0</span>
+        </div>
+
+        <div class="scoreDisplay">Computadora Score:
+            <span id="compuscoredisplay">0</span>
+        </div>
+
+        <script src="../js/PPT.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

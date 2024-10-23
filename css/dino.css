@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #1592c496;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 30px;
+    &:hover{
+        color: black;
+    }
+}
+
+.contenedor{
+    width: 920px;
+    height: 280px;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background:linear-gradient(#B7D6C7, #FFE2D1);
+    overflow: hidden;
+    border-radius: 15px;
+    border-color: black;
+    border: solid;
+}
+
+.dino{
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    bottom: 22px;
+    left: 42px;
+    z-index: 2;
+    background: url(../img/dino.png) repeat-x 0px 0px;
+    background-size: 336px 84px;
+    background-position-x: 0px;
+}
+
+.dino-corriendo{
+    animation: animarDino 0.4s steps(3) infinite;
+}
+
+.dino-estrellado{
+    background-position-x:-252px ;
+}
+
+@keyframes animarDino{
+    from{
+        background-position-x: -84;
+    }
+    to{
+        background-position-x: -252px;
+    }
+}
+
+
+.piso{
+    width: 200%;
+    height: 42px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(../img/suelo.png) repeat 0px 0px;
+    background-size: 50% 42px;
+
+}
+
+.puntaje{
+    margin-top: 60px;
+    color: black;
+    font-family: "Permanent Marker", cursive;
+    font-size: 100px;
+}
+
+
+.cactus{
+    width: 46px;
+    height: 96px;
+    position: absolute;
+    bottom: 16px;
+    left: 600px;
+    z-index: 1;
+    background: url(../img/cactus1.png) no-repeat;
+}
+
+.cactus2{
+    width: 98px;
+    height: 66px;
+
+    background: url(../img/cactus2.png) no-repeat;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.reset, a{
+    padding: 15px 20px;
+    color: rgb(8, 94, 128);
+    background: white;
+    border: none;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600px;
+    &:hover{
+        color: white;
+        background: rgb(8, 94, 128);
+    }
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    margin-top: 200px;
+}
