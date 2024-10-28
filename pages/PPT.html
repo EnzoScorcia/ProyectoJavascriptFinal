@@ -13,28 +13,29 @@
     <a href="../index.html">⬅️Volver a la pagina principal!</a>
 
 
-        <h1>Piedra - Papel - Tijera</h1>
+    <h1>Piedra - Papel - Tijera</h1>
 
-        <div class="opciones">
-            <button onclick="playGame('Piedra')">🤜</button>
-            <button onclick="playGame('Papel')">🖐️</button>
-            <button onclick="playGame('Tijera')">✌️</button>
-        </div>
+    <div class="opciones">
+        <button onclick="playGame('Piedra')">🤜</button>
+        <button onclick="playGame('Papel')">🖐️</button>
+        <button onclick="playGame('Tijera')">✌️</button>
+    </div>
 
+    <div class="displayers">
         <div id="PlayerDisplay">Player: </div>
         <div id="CompuDisplay">Computadora: </div>
         <div id="ResultadoDisplay"></div>
+    </div>
+    <div class="scoreDisplay">Player Score:
+        <span id="playerscoredisplay">0</span>
+    </div>
 
-        <div class="scoreDisplay">Player Score:
-            <span id="playerscoredisplay">0</span>
-        </div>
+    <div class="scoreDisplay">Computadora Score:
+        <span id="compuscoredisplay">0</span>
+    </div>
 
-        <div class="scoreDisplay">Computadora Score:
-            <span id="compuscoredisplay">0</span>
-        </div>
-
-        <script src="../js/PPT.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/PPT.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

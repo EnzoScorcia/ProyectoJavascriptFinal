@@ -186,4 +186,9 @@ function Estrellarse(){
     dino.classList.remove("dino-corriendo");
     dino.classList.add("dino-estrellado");
     parado = true;
+    Swal.fire({
+        icon: "error",
+        title: "¡GAME OVER!",
+        text: "Perdiste, intentalo de nuevo!",
+    });
 }
